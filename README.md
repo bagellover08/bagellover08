@@ -16,7 +16,7 @@ Open the local address printed by Jekyll, usually <http://localhost:4000>. Stop 
 
 ## Make it yours
 
-- Edit `index.html` for the home page and `about.md` for the about page. The About text is explicitly a placeholder.
+- The main editable pages are grouped in `pages/`: edit `pages/index.html` for the home page, `pages/about.md` for the About page, and `pages/garden.html` for the Posts page. Their existing URLs stay the same.
 - Edit `title` and `description` in `_config.yml` for the site name and default browser description.
 - Notes are ordinary Markdown files in `_notes/`. To add one, create a file such as `_notes/my-new-note.md`:
 
@@ -34,7 +34,7 @@ It appears automatically in the garden, sorted by title. Its URL will be `/garde
 
 ## Change the colors
 
-Open `assets/css/style.css`. The named color variables at the top control the palette. For example, change `--forest` for dark green and `--berry` for the red accent. Try different combinations, but check that text and links remain readable against their backgrounds. The site works without remote fonts, images, or JavaScript.
+Open `assets/css/style.css`. The named color variables at the top control the palette. For example, change `--forest` for dark green and `--berry` for the red accent. Try different combinations, but check that text and links remain readable against their backgrounds. The site uses JetBrains Mono from Google Fonts and JavaScript for the Spotify widget; the rest of the content remains available if they cannot load.
 
 ## Monkeytype stats
 
