@@ -6,6 +6,21 @@ layout: default
   <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="art-caption">A place to let one rip.</div></div>
 </section>
 
+<section class="home-notes wrap" aria-labelledby="monkeytype-heading">
+  <div class="section-head"><div><h2 id="monkeytype-heading">Monkeytype</h2><p>Typing stats from saved tests.</p></div></div>
+  {% assign typing = site.data.monkeytype %}
+  {% if typing.connected %}
+    <p>{% if typing.complete %}All-time saved tests{% else %}Retrieved saved tests{% endif %}: {{ typing.retrieved_count }} total. Updated {{ typing.updated_at | escape }}.</p>
+    <div class="note-list">
+      {% for stat in typing.categories %}
+      <div class="note-row"><span class="note-category">{% if stat.mode == 'time' %}15 seconds{% else %}10 words{% endif %}</span><span class="note-title">PB: {% if stat.pb_wpm != nil %}{{ stat.pb_wpm }} WPM{% else %}—{% endif %}<small>{{ stat.count }} {% if typing.complete %}all-time{% else %}retrieved{% endif %} saved tests · Mean: {% if stat.count > 0 %}{{ stat.mean_wpm }} WPM · {{ stat.mean_accuracy }}% accuracy{% else %}—{% endif %}</small></span></div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Monkeytype stats are disconnected for now.</p>
+  {% endif %}
+</section>
+
 <section class="home-notes wrap"><div class="section-head"><div><h2>Fresh from the butt</h2><p>Some things I made. Sorry.</p></div><a class="text-link" href="{{ '/garden/' | relative_url }}">See all notes <span aria-hidden="true">↗</span></a></div>
   <div class="note-list">{% assign notes = site.notes | sort: 'title' %}{% for note in notes limit:3 %}<a class="note-row" href="{{ note.url | relative_url }}"><span class="note-category">{{ note.category | default: 'Note' | escape }}</span><span class="note-title">{{ note.title | escape }}<small>{{ note.description | escape }}</small></span><span class="note-arrow" aria-hidden="true">↗</span></a>{% endfor %}</div>
 </section>

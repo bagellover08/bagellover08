@@ -20,3 +20,5 @@ exclude:
   - vendor
   - PRODUCT.md
   - DESIGN.md
+  - scripts
+  - tests
