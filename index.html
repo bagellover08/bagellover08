@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="hero wrap">
+  <div class="hero-copy"><h1>A little space<br>to <em>fart around.</em></h1><p>Welcome to my corner of the internet. There will be poop. There will be farts. There may even be poop 2.</p><a class="button" href="{{ '/garden/' | relative_url }}">Smell the garden <span aria-hidden="true">↗</span></a></div>
+  <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="art-caption">A place to let one rip.</div></div>
+</section>
+
+<section class="home-notes wrap"><div class="section-head"><div><h2>Fresh from the butt</h2><p>Some things I made. Sorry.</p></div><a class="text-link" href="{{ '/garden/' | relative_url }}">See all notes <span aria-hidden="true">↗</span></a></div>
+  <div class="note-list">{% assign notes = site.notes | sort: 'title' %}{% for note in notes limit:3 %}<a class="note-row" href="{{ note.url | relative_url }}"><span class="note-category">{{ note.category | default: 'Note' | escape }}</span><span class="note-title">{{ note.title | escape }}<small>{{ note.description | escape }}</small></span><span class="note-arrow" aria-hidden="true">↗</span></a>{% endfor %}</div>
+</section>

@@ -1,0 +1,22 @@
+title: bagellover08
+description: A little corner of the internet for growing ideas.
+baseurl: ""
+url: ""
+markdown: kramdown
+collections:
+  notes:
+    output: true
+    permalink: /garden/:name/
+defaults:
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - PRODUCT.md
+  - DESIGN.md

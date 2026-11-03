@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="reading wrap">
+  <a class="back-link" href="{{ '/garden/' | relative_url }}">← All notes</a>
+  <header class="reading-header"><p class="note-kind">{{ page.category | default: 'Note' | escape }}</p><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="reading-intro">{{ page.description | escape }}</p>{% endif %}</header>
+  <div class="prose">{{ content }}</div>
+  <div class="reading-end"><span aria-hidden="true">✳</span><p>Thanks for stopping by.</p></div>
+</article>

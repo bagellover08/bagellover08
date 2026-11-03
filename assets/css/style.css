@@ -1,0 +1,92 @@
+/* Change these colors to make the garden your own. */
+:root {
+  --paper: #f3f0df;
+  --ink: #243c2d;
+  --forest: #254b37;
+  --leaf: #bdcc9d;
+  --moss: #829c6a;
+  --earth: #614630;
+  --berry: #803b3b;
+  --cream: #faf7e9;
+  --line: #aeb8a0;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Trebuchet MS", Verdana, sans-serif; line-height: 1.55; }
+::selection { background: var(--berry); color: var(--cream); }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .25em; }
+a:focus-visible { outline: 3px solid var(--berry); outline-offset: 4px; }
+.wrap { width: min(100% - 3rem, 1240px); margin-inline: auto; }
+.skip-link { position: absolute; top: -5rem; left: 1rem; background: var(--cream); padding: .6rem; z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.site-header { min-height: 96px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.brand { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; font-weight: bold; letter-spacing: -.03em; }
+.brand-mark { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 50%; background: var(--berry); color: var(--cream); font: bold 1.35rem Georgia, serif; }
+nav { display: flex; flex-wrap: wrap; gap: clamp(1rem, 3vw, 2.5rem); font-size: .9rem; font-weight: bold; }
+nav a { text-decoration: none; }
+nav a:hover, nav a[aria-current] { text-decoration: underline; }
+.hero { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 510px; background: var(--leaf); }
+.hero-copy { padding: clamp(2rem, 6vw, 6rem); align-self: center; }
+h1, h2, p { margin-top: 0; }
+h1, h2 { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.035em; line-height: 1.03; }
+h1 { font-size: clamp(3.3rem, 6.5vw, 6rem); margin-bottom: 1.5rem; }
+h1 em, .intro-inner em { color: var(--berry); font-weight: 400; }
+.hero-copy p { max-width: 35rem; font-size: 1.1rem; margin-bottom: 2rem; }
+.button { display: inline-flex; justify-content: space-between; align-items: center; gap: 2.5rem; padding: .95rem 1.2rem; background: var(--forest); color: var(--cream); text-decoration: none; font-size: .9rem; font-weight: bold; }
+.button:hover { background: var(--berry); }
+.hero-art { position: relative; overflow: hidden; min-height: 390px; background: var(--forest); }
+.sun { position: absolute; width: 43%; aspect-ratio: 1; border-radius: 50%; background: var(--leaf); top: 12%; left: 29%; }
+.hill { position: absolute; width: 130%; height: 55%; border-radius: 50% 50% 0 0; bottom: -20%; }
+.hill-back { background: var(--moss); left: -45%; transform: rotate(-12deg); }
+.hill-front { background: var(--earth); right: -50%; transform: rotate(12deg); }
+.art-caption { position: absolute; bottom: 1.5rem; right: 1.5rem; color: var(--cream); font-size: .75rem; }
+.intro-band { background: var(--forest); color: var(--cream); margin-top: 2.5rem; }
+.intro-inner { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: clamp(1.5rem, 4vw, 4rem); padding-block: 3rem; }
+.big-asterisk { margin: 0; color: var(--leaf); font-size: 4rem; line-height: 1; }
+.intro-inner p:not(.big-asterisk) { max-width: 700px; margin: 0; font: 1.55rem/1.35 Georgia, serif; }
+.intro-inner em { color: var(--leaf); }
+.intro-inner a { font-size: .85rem; font-weight: bold; }
+.home-notes, .garden-content { padding-block: 6rem; }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+h2 { font-size: clamp(2.3rem, 4vw, 3.6rem); margin-bottom: .5rem; }
+.section-head p { margin: 0; }
+.text-link, .count { font-size: .85rem; font-weight: bold; white-space: nowrap; }
+.note-list { border-top: 1px solid var(--line); }
+.note-row { display: grid; grid-template-columns: 1fr 3fr auto; gap: 2rem; align-items: center; padding: 1.7rem .25rem; border-bottom: 1px solid var(--line); text-decoration: none; }
+.note-row:hover .note-title { color: var(--berry); }
+.note-category { font-size: .75rem; font-weight: bold; text-transform: uppercase; letter-spacing: .08em; }
+.note-title { font: 1.75rem/1.2 Georgia, serif; }
+.note-title small { display: block; margin-top: .45rem; font: .9rem/1.5 "Trebuchet MS", Verdana, sans-serif; color: var(--ink); }
+.note-arrow { font-size: 1.5rem; }
+.page-heading { padding-block: 5rem; border-bottom: 1px solid var(--line); }
+.page-heading p, .reading-intro { max-width: 38rem; font-size: 1.2rem; }
+.period { color: var(--berry); }
+.reading { max-width: 800px; padding-block: 4rem 7rem; }
+.back-link { font-size: .85rem; font-weight: bold; }
+.reading-header { margin: 3rem 0; }
+.note-kind { color: var(--berry); font-size: .8rem; font-weight: bold; text-transform: uppercase; letter-spacing: .08em; }
+.prose { max-width: 68ch; font-size: 1.1rem; line-height: 1.8; }
+.prose h2 { font-size: 2rem; margin-top: 2.5rem; }
+.prose a { color: var(--berry); }
+.reading-end { margin-top: 4rem; border-top: 1px solid var(--line); padding-top: 2rem; color: var(--berry); }
+.reading-end span { font-size: 2rem; }
+.site-footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 1rem; padding-block: 2rem; font-size: .85rem; }
+.site-footer p { margin: 0; }
+@media (max-width: 700px) {
+  .wrap { width: min(100% - 2rem, 1240px); }
+  .site-header { min-height: 80px; gap: 1rem; }
+  .brand span:last-child { display: none; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-copy { padding: 3rem 1.5rem; }
+  .hero-art { min-height: 270px; }
+  .intro-inner { grid-template-columns: auto 1fr; }
+  .intro-inner a { grid-column: 2; }
+  .home-notes, .garden-content { padding-block: 4rem; }
+  .section-head { align-items: start; flex-direction: column; gap: 1rem; }
+  .note-row { grid-template-columns: 1fr auto; gap: .5rem; }
+  .note-category { grid-column: 1 / -1; }
+  .note-title { font-size: 1.5rem; }
+  .page-heading { padding-block: 3rem; }
+  .site-footer { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
