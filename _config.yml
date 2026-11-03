@@ -1,7 +1,7 @@
 title: bagellover08
 description: A little corner of the internet for growing ideas.
 baseurl: ""
-url: ""
+url: "https://bagellover08.com"
 markdown: kramdown
 collections:
   notes:
