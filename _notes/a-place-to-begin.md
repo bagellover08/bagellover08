@@ -1,10 +1,8 @@
 ---
-title: A place to poop
-description: Everybody has to start somewhere.
-category: Poop
+title: Welcome to my website
+description: A little introduction to this corner of the internet.
+category: Hello
 ---
-Poop.
+Welcome! This is a place for me to share whatever I feel like, from things I'm learning to projects and random discoveries.
 
-Sometimes you sit down with a plan. Sometimes the plan sits down with you.
-
-For more groundbreaking work, see [the art of farting]({{ '/garden/the-art-of-noticing/' | relative_url }}).
+This is a sample post. Edit it or replace it with something of your own.

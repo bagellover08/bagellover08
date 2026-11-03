@@ -1,15 +1,13 @@
 ---
 layout: default
-title: Ligma Balls
+title: About
 permalink: /about/
 ---
 <article class="reading wrap">
-  <header class="reading-header"><h1>Pooping and farting<span class="period">.</span></h1><p class="reading-intro">Supreme Diddy Ligma Balls.</p></header>
+  <header class="reading-header"><h1>About<span class="period">.</span></h1><p class="reading-intro">Hey, welcome to my website.</p></header>
   <div class="prose" markdown="1">
-Poop
+This is my little corner of the internet: a place to share whatever I'm interested in, working on, or having fun with.
 
-Fart
-
-Poop 2.
+This page is a work in progress. More to come!
   </div>
 </article>

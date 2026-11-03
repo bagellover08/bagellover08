@@ -1,12 +1,8 @@
 ---
-title: Poop 2
-description: The sequel nobody asked for.
-category: Poop
+title: Projects and experiments
+description: A space for things in the works.
+category: Projects
 ---
-Poop 2.
+This is a sample post. Share a project, an experiment, or something you've been learning about.
 
-This time it's personal.
-
-- More poop.
-- More fart.
-- Same butt.
+It doesn't need to be finished to be worth sharing.

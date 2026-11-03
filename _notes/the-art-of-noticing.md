@@ -1,10 +1,6 @@
 ---
-title: The art of farting
-description: A small practice for making a big stink.
-category: Fart
+title: Things I like
+description: A place for favorites, discoveries, and recommendations.
+category: Favorites
 ---
-Fart.
-
-Was it loud? Was it sneaky? Was it worth writing down?
-
-Yes.
+This is a sample post. Add some of your favorite music, games, books, websites, or anything else you'd like to share.
