@@ -1,7 +1,0 @@
----
-layout: default
-title: Posts
-permalink: /garden/
----
-<section class="page-heading wrap"><h1>Posts<span class="period">.</span></h1><p>Whatever I feel like sharing.</p></section>
-<section class="garden-content wrap"><div class="section-head"><h2>All notes</h2><span class="count">{{ site.notes.size }} posts</span></div><div class="note-list">{% assign notes = site.notes | sort: 'title' %}{% for note in notes %}<a class="note-row" href="{{ note.url | relative_url }}"><span class="note-category">{{ note.category | default: 'Note' | escape }}</span><span class="note-title">{{ note.title | escape }}<small>{{ note.description | escape }}</small></span><span class="note-arrow" aria-hidden="true">↗</span></a>{% else %}<p>Nothing here yet. Check back soon.</p>{% endfor %}</div></section>

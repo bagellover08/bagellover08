@@ -14,11 +14,11 @@
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="bagellover08 home"><span class="brand-mark" aria-hidden="true">b.</span><span>bagellover08</span></a>
     <nav aria-label="Main navigation">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
-      <a href="{{ '/garden/' | relative_url }}"{% if page.url contains '/garden/' %} aria-current="page"{% endif %}>Posts</a>
+      <a href="{{ '/writings/' | relative_url }}"{% if page.url contains '/writings/' or page.url contains '/garden/' %} aria-current="page"{% endif %}>Writings</a>
       <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
     </nav>
   </header>
   <main id="main">{{ content }}</main>
-  <footer class="site-footer wrap"><a href="{{ '/garden/' | relative_url }}">Explore the posts <span aria-hidden="true">↗</span></a></footer>
+  <footer class="site-footer wrap"><a href="{{ '/writings/' | relative_url }}">Explore the writings <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>

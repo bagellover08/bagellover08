@@ -9,10 +9,9 @@ permalink: /
       <p class="eyebrow">A little corner of the internet</p>
       <h1>Hello, and<br><em>welcome!</em></h1>
       <p>A place for things I like, things I make, and whatever else I feel like sharing. Have a look around!</p>
-      <a class="button" href="{{ '/garden/' | relative_url }}">Explore the posts <span aria-hidden="true">→</span></a>
+      <a class="button" href="{{ '/writings/' | relative_url }}">Explore the writings <span aria-hidden="true">→</span></a>
     </div>
   </div>
-  <aside class="welcome-note"><span aria-hidden="true" class="welcome-star">✳</span><p>You're here!</p><span>Make yourself at home.</span></aside>
 </section>
 
 <section class="home-notes wrap" aria-labelledby="spotify-heading">
@@ -40,6 +39,6 @@ permalink: /
   {% endif %}
 </section>
 
-<section class="home-notes wrap"><div class="section-head"><div><h2>Things to explore</h2><p>A little bit of this and that.</p></div><a class="text-link" href="{{ '/garden/' | relative_url }}">See all posts <span aria-hidden="true">↗</span></a></div>
+<section class="home-notes wrap"><div class="section-head"><div><h2>Things to explore</h2><p>A little bit of this and that.</p></div><a class="text-link" href="{{ '/writings/' | relative_url }}">See all writings <span aria-hidden="true">↗</span></a></div>
   <div class="note-list">{% assign notes = site.notes | sort: 'title' %}{% for note in notes limit:3 %}<a class="note-row" href="{{ note.url | relative_url }}"><span class="note-category">{{ note.category | default: 'Note' | escape }}</span><span class="note-title">{{ note.title | escape }}<small>{{ note.description | escape }}</small></span><span class="note-arrow" aria-hidden="true">↗</span></a>{% endfor %}</div>
 </section>

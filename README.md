@@ -16,7 +16,7 @@ Open the local address printed by Jekyll, usually <http://localhost:4000>. Stop 
 
 ## Make it yours
 
-- The main editable pages are grouped in `pages/`: edit `pages/index.html` for the home page, `pages/about.md` for the About page, and `pages/garden.html` for the Posts page. Their existing URLs stay the same.
+- The main editable pages are grouped in `pages/`: edit `pages/index.html` for the home page, `pages/about.md` for the About page, and `pages/writings.html` for the Writings page. The old `/garden/` page redirects to `/writings/`.
 - Edit `title` and `description` in `_config.yml` for the site name and default browser description.
 - Notes are ordinary Markdown files in `_notes/`. To add one, create a file such as `_notes/my-new-note.md`:
 
@@ -30,7 +30,7 @@ category: Ideas
 Write your note here. **Markdown** works!
 ```
 
-It appears automatically in the garden, sorted by title. Its URL will be `/garden/my-new-note/`. Rename the file to change that URL. To remove a note, delete its file; check and update any links pointing to it. The home page displays the first three notes alphabetically.
+It appears automatically on the Writings page, sorted by title. Its URL will be `/garden/my-new-note/`. Rename the file to change that URL. To remove a note, delete its file; check and update any links pointing to it. The home page displays the first three notes alphabetically.
 
 ## Change the colors
 
