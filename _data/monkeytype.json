@@ -1,6 +1,6 @@
 {
   "connected": true,
-  "updated_at": "2026-11-07 13:11 UTC",
+  "updated_at": "2026-11-14 13:37 UTC",
   "complete": false,
   "retrieved_count": 1000,
   "categories": [
@@ -8,17 +8,17 @@
       "mode": "time",
       "mode2": "15",
       "pb_wpm": 127.91,
-      "count": 1,
-      "mean_wpm": 94.34,
-      "mean_accuracy": 94.44
+      "count": 0,
+      "mean_wpm": null,
+      "mean_accuracy": null
     },
     {
       "mode": "words",
       "mode2": "10",
-      "pb_wpm": 156.78,
-      "count": 989,
-      "mean_wpm": 115.35,
-      "mean_accuracy": 97.47
+      "pb_wpm": 162.65,
+      "count": 998,
+      "mean_wpm": 120.77,
+      "mean_accuracy": 97.61
     }
   ]
 }
