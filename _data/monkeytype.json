@@ -1,6 +1,6 @@
 {
   "connected": true,
-  "updated_at": "2026-11-17 16:07 UTC",
+  "updated_at": "2026-11-20 15:32 UTC",
   "complete": false,
   "retrieved_count": 1000,
   "categories": [
@@ -17,8 +17,8 @@
       "mode2": "10",
       "pb_wpm": 162.65,
       "count": 998,
-      "mean_wpm": 120.77,
-      "mean_accuracy": 97.61
+      "mean_wpm": 120.8,
+      "mean_accuracy": 97.6
     }
   ]
 }
